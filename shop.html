@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="basicstyle.css" rel="stylesheet" type="text/css">
+<link href="responsive.css" rel="stylesheet"  media="screen and
+(max-width: 960px)">
+<script>
+		function nav_li_selected(li_id){
+			for(i = 0; i < 7; i++)
+				{
+					document.getElementById(i.toString()).style.backgroundColor = "";
+				}
+			document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		}
+	</script>
+    </head>
+<body>
+<div class="wrapper">
+	<header>
+				<h2>Welcome to Stay Fit!!</h2>
+					<nav>
+						<ul>
+							<li><a href="index.php" id="0" onClick="nav_li_selected(0)">Home</a></li>
+							<li><a href="nutrition/nutritions.php" id="1" onClick="nav_li_selected(1)">Nutrition</a></li>
+							<li><a href="yoga.html" id="2" onClick="nav_li_selected(2)">Workout</a></li>
+							<li><a href="shop.html" id="3" onClick="nav_li_selected(3)">Shopping</a></li>
+							<li><a href="about.html" id="4" onClick="nav_li_selected(4)">About Us</a></li>
+								<li><a href="BMI.html" id="5" onClick="nav_li_selected(5)">BMI</a></li>
+                                <li><a href="login.html" id="6" onClick="nav_li_selected(6)">Login</a></li>
+						</ul>
+					</nav>
+						</header>
+<h2 class="w3-center"><font size="7">Health Shop</font></h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/1.jpg" style="width:30%" >
+  <img class="mySlides" src="images/2.jpg" style="width:30%"  >
+  <img class="mySlides" src="images/3.jpg" style="width:30%" >
+  
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+   <div>
+     <h1><a href="https://ensure.com/nutrition-products/ensure-plus">Ensure Muscle Health</a>
+     </h1>
+     <img src="images/image1.jpg" style="width:304px;height:228px;">
+     <p><font size="5">Cool, creamy Ensure is great for an occasional breakfast or lunch, or a delicious between-meal snack. Each delicious Ensure drink is an excellent source of 26 essential vitamins and minerals. The complete, balanced nutrition you get from Ensure can help you stay healthy, active, and energetic</font></p>
+     <p><font size="5">$64</font></p>
+   </div>
+   
+   
+                            
+                 
+                   
+<div>
+     <h1><a href="https://www.amazon.com/Pure-Protein-Variety-Chocolate-Peanut/dp/B01126O3OY?th=1">Choco Peanut Protein Bar</a>
+     </h1>
+     <img src="images/ProteinBar.jpg" style="width:304px;height:228px;">
+     <p><font size="5">You need some protein every day so your body can maintain muscles, organs, and other structures and fluids in your body. Protein rich foods include meats, poultry, fish, legumes, nuts, seeds and dairy, but proteins are present in smaller amounts in other foods. If you engage in heavy physical activities, you'll need a little more protein than if you're less active. it doesn't really matter if your protein comes from plant or animal sources, as along as you get all of the essential amino acids that make up proteins, you're good.</font></p>
+     <p><font size="5">$20</font></p>
+   </div>
+          
+          
+         
+   <div>
+     <h1><a href="http://www.chemistwarehouse.com.au/buy/78516/Cenovis-Vitamin-C-250mg-150-Tablets">Cenivis Vitamin Tablets</a>
+     </h1>
+     <img src="images/Vitamin.jpg" style="width:304px;height:228px;">
+     <p><font size="5">When the food on the plate falls short and doesn’t include essential nutrients like calcium, potassium, vitamin D, and vitamin B12, some of the nutrients many Americans don’t get enough of, a supplement can help take up the nutritional slack. Vitamin and mineral supplements can help prevent deficiencies that can contribute to chronic conditions.</font></p>
+     <p><font size="5">$7.69</font></p>
+
+   </div>
+          
+          
+<div>
+     <h1><a href="https://australiaherbalstore.com/endura-mass.html?gclid=CLer5eyVj9QCFdgRvQoddyMPAw">Endura Mass</a>
+     </h1>
+     <img src="images/enduramass.jpg" style="width:304px;height:228px;">
+     <p><font size="5">Endura Mass is an easy way to gain and maintain weight. It is 100% vegetarian therefore it can be taken without any hesitation. A balanced formulation of high quality soy proteins, carbohydrates, fats, minerals and vitamins, It provides up to 3480 extra calories per day other than the calories gained by regular diet.</font></p>
+          <p><font size="5">$28</font></p>
+
+   </div>
+          
+
+  <div>
+     <h1><a href="https://shop.mojudrinks.com/">Moju Nutri Plus Juice</a>
+     </h1>
+     <img src="images/juice.jpg" style="width:304px;height:228px;">
+     <p><font size="5">Moju juice is a convenient and quick way to get an energizing hit of phytonutrients – all those good-for-you vitamins, minerals, chlorophyll and antioxidants. A well-made green juice is full of detox-boosting properties and is a convenient way to increase your consumption of greens. A juice is made by extracting the fiber (or pulp) from fruits and vegetables in a juicer so that we’re only left with a completely liquid drink.</font></p>
+          <p><font size="5">$10</font></p>
+
+   </div>
+          
+
+	
+	
+	</div>
+	
+     <footer><h3>Copyright 2017 Stayfit, Inc. All rights reserved.</h3></footer>              
+</body>
+
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="basicstyle.css" rel="stylesheet" type="text/css">
+<link href="responsive.css" rel="stylesheet"  media="screen and
+(max-width: 960px)">
+<script>
+		function nav_li_selected(li_id){
+			for(i = 0; i < 7; i++)
+				{
+					document.getElementById(i.toString()).style.backgroundColor = "";
+				}
+			document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		}
+	</script>
+<title>Logout</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<header>
+				<h2>Welcome to Stay Fit!!</h2>
+					<nav>
+						<ul>
+							<li><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+							<li><a href="#" id="1" onClick="nav_li_selected(1)">Nutrition</a></li>
+							<li><a href="#" id="2" onClick="nav_li_selected(2)">Workout</a></li>
+							<li><a href="shop.html" id="3" onClick="nav_li_selected(3)">Shopping</a></li>
+							<li><a href="about.html" id="4" onClick="nav_li_selected(4)">About Us</a></li>
+								<li><a href="BMI.html" id="5" onClick="nav_li_selected(5)">BMI</a></li>
+                                <li><a href="login.html" id="6" onClick="nav_li_selected(6)">Login</a></li>
+						</ul>
+					</nav>
+                    
+						</header>
+                        
+                        </div>
+                        
+     <footer><h3>Copyright 2017 Stayfit, Inc. All rights reserved.</h3></footer>              
+
+</body>
+</html>
+
